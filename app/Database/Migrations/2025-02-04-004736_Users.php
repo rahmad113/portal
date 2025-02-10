@@ -26,7 +26,7 @@ class Users extends Migration
             ],
             'role' => [
                 'type' => 'ENUM',
-                'constraint' => 'user,admin',
+                'constraint' => ['admin', 'verifikator_kab', 'kepala_dinas'],
                 'constraint' => 10,
                 'default' => 'user',
             ],

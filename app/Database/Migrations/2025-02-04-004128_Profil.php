@@ -27,20 +27,19 @@ class Profil extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255
             ],
-
-			'jabatan_kerja' => [
-				'type'           => 'VARCHAR',
-				'constraint'     => '255',
-			],
-            'nama_instansi'      => [
-				'type'           => 'VARCHAR',
-				'constraint'     => '255'
-            ],
-			'tingkat_satuan_kerja'      => [
-				'type'           => 'ENUM',
-				'constraint'     => ['Provinsi','Kabupaten/Kota'],
-				'default'        => 'Provinsi',
-			],
+			// 'jabatan_kerja' => [
+			// 	'type'           => 'VARCHAR',
+			// 	'constraint'     => '255',
+			// ],
+            // 'nama_instansi'      => [
+			// 	'type'           => 'VARCHAR',
+			// 	'constraint'     => '255'
+            // ],
+			// 'tingkat_satuan_kerja'      => [
+			// 	'type'           => 'ENUM',
+			// 	'constraint'     => ['Provinsi','Kabupaten/Kota'],
+			// 	'default'        => 'Provinsi',
+			// ],
             'no_telepon'      => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '255'
@@ -49,10 +48,10 @@ class Profil extends Migration
 				'type'           => 'VARCHAR',
 				'constraint'     => '255'
             ],
-            'picture'      => [
-				'type'           => 'VARCHAR',
-				'constraint'     => '255',
-			]
+            // 'picture'      => [
+			// 	'type'           => 'VARCHAR',
+			// 	'constraint'     => '255',
+			// ]
             ]);
             $this->forge->addKey('id_user', true);
             $this->db->enableForeignKeyChecks();
